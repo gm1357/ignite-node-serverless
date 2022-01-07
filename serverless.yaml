@@ -18,6 +18,7 @@ custom:
       port: 8000
       inMemory: true
       migrate: true
+  dotenvVars: ${file(config.js)}
 
 provider:
   name: aws
