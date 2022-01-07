@@ -5,12 +5,14 @@
   "main": "serverless.ts",
   "scripts": {
     "dev": "serverless offline",
-    "deploy": "sls deploy -v"
+    "deploy": "sls deploy -v",
+    "dynamo:start": "serverless dynamodb start"
   },
   "engines": {
     "node": ">=14.15.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.1052.0",
     "babel-loader": "^8.2.2",
     "chrome-aws-lambda": "^8.0.2",
     "dayjs": "^1.10.4",
